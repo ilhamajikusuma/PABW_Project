@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Halaman ini berisi daftar anime yang pernah saya tonton beserta rating saya.">
+  <title>List Anime</title>
+</head>
+<body>
+
+  <header>
+    <h1>List Anime Yang Pernah Ditonton</h1>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#bagian-1">Tautan 1</a></li>
+        <li><a href="#bagian-2">Tautan 2</a></li>
+        <li><a href="#bagian-3">Tautan 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="bagian-1">
+      <h2>List Anime</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Nomor</th>
+            <th scope="col">Judul</th>
+            <th scope="col">Season</th>
+            <th scope="col">Episode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Wistoria Wand and Sword</td>
+            <td>2</td>
+            <td>24</td>
+            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Dragon Ball Super</td>
+            <td>1</td>
+            <td>131</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>One Piece</td>
+            <td>1</td>
+            <td>1179</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <figure>
+        <img src="47b1d95eda9ab2962cdb174d95703fc6fe52e810b73f9654f5c3d3efe582d3d6.jpg"
+             alt="Poster anime Wistoria Wand and Sword"
+             width="640" height="360" loading="lazy">
+        <figcaption>Wistoria Wand and Sword</figcaption>
+      </figure>
+
+      <figure>
+        <img src="thumb-1920-772376.jpg"
+             alt="Poster anime Dragon Ball Super"
+             width="640" height="360" loading="lazy">
+        <figcaption>Dragon Ball Super</figcaption>
+      </figure>
+
+      <figure>
+        <img src="One_Piece_Anime_Logo.webp"
+             alt="Logo anime One Piece"
+             width="640" height="360" loading="lazy">
+        <figcaption>One Piece</figcaption>
+      </figure>
+    </section>
+
+    <section id="bagian-2">
+      <h2>Tambah Anime ke Daftar</h2>
+
+      <form action="/simpan" method="post">
+        <p>
+          <label for="nama-kolom">Judul</label>
+          <input type="text" id="nama-kolom" name="nama-kolom" required>
+        </p>
+        <p>
+          <label for="kolom-2">Season</label>
+          <input type="number" id="kolom-2" name="kolom-2" min="1" required>
+        </p>
+        <p>
+          <label for="kolom-3">Episode</label>
+          <input type="number" id="kolom-3" name="kolom-3" min="1" required>
+        </p>
+        <button type="submit">Simpan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="bagian-3">
+    <p>ILHAM AJI KUSUMA · 25523172 · 2026</p>
+  </footer>
+
+</body>
+</html>
